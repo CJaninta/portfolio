@@ -37,17 +37,21 @@
 }
 
 .header_area .main-menu .navbar-nav .active a {
-  background: var(--gradient-color);
+  background: linear-gradient(to bottom, #ff9966, #ff5e62);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .header_area .main-menu .navbar-nav a:hover {
-  background: var(--gradient-color);
+  background: linear-gradient(to bottom, #ff9966, #ff5e62);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.contact {
+  text-align: end;
 }
 
 /* end navigation */
@@ -110,7 +114,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  opacity: 0.15;
+  /*opacity: 0.5;*/
 }
 
 .about-image {
@@ -125,23 +129,23 @@
   font-family: "Inter";
   font-size: 10rem;
   font-weight: bold;
-  background: linear-gradient(to bottom, #ff9966, #ff5e62);
+  background: linear-gradient(to right, #ff9966, #ff5e62);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.site-main .about-area {
+.about-area {
   padding: 8rem 5rem;
 }
 
 .about-title {
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .about-title h2 {
   font-weight: bold;
-  background: linear-gradient(to bottom, #ff9966, #ff5e62);
+  background: linear-gradient(to bottom, #c33764, #1d2671);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -149,7 +153,7 @@
 
 .about-title h4 {
   margin-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 50px;
   font-weight: bold;
 }
 
@@ -157,13 +161,13 @@
   margin-right: 10px;
 }
 
-.site-main .about-area .about-title {
+.about-area .about-title {
   display: block;
   font-family: "Inter";
-  color: rgba(88, 35, 0, 0.726);
+  color: rgba(61, 61, 61, 0.726);
 }
 
-.site-main .about-area .about-title .paragraph > p {
+.about-area .about-title .paragraph > p {
   padding: 0.4rem 0;
 }
 
@@ -189,17 +193,17 @@
   background-clip: text;
 }
 
-.site-main .edc-area {
+.edc-area {
   padding: 8rem 5rem;
 }
 
 .edc-title {
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .edc-title h4 {
   font-weight: bold;
-  background: linear-gradient(to bottom, #ff9966, #ff5e62);
+  background: linear-gradient(to bottom, #c33764, #1d2671);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -215,13 +219,13 @@
   margin-right: 10px;
 }
 
-.site-main .edc-area .edc-title {
+.edc-area .edc-title {
   display: block;
   font-family: "Inter";
-  color: rgba(88, 35, 0, 0.726);
+  color: rgba(61, 61, 61, 0.726);
 }
 
-.site-main .edc-area .edc-title .paragraph > p {
+.edc-area .edc-title .paragraph > p {
   padding: 0.4rem 0;
 }
 
@@ -271,118 +275,133 @@
 }
 
 .exp-title {
-  padding: 1rem;
+  padding: 2rem;
 }
 
-.exp-title h4 {
+.exp-title h4,
+.exp-title span {
   font-weight: bold;
-  background: linear-gradient(to bottom, #ff9966, #ff5e62);
+  background: linear-gradient(to bottom, #c33764, #1d2671);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.exp-title h6 {
-  margin-top: 20px;
-  padding-left: 20px;
+.exp-title span {
+  font-size: 15px;
   font-weight: bold;
+  margin-left: 30px;
+}
+
+.exp-title h5,
+.exp-title ul,
+.exp-title li {
+  margin-top: 20px;
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+.exp-title h5 {
+  padding-left: 10px;
 }
 
 .exp-title i {
   margin-right: 10px;
 }
 
-.site-main .exp-area .exp-title {
+.exp-area .exp-title {
   display: block;
   font-family: "Inter";
-  color: rgba(88, 35, 0, 0.726);
+  color: rgba(61, 61, 61, 0.726);
 }
 
-.site-main .exp-area .exp-title .paragraph > p {
+.exp-area .exp-title .paragraph > p {
   padding: 0.4rem 0;
 }
 
 /* End Experience Area */
 
-/* Start Brand Area */
+/* Start Skill Area */
 
-.site-main .brand-area {
-  padding: 1rem 20rem;
-  margin-bottom: 4rem;
-}
-
-.site-main .brand-area .first-row .col-lg-4 {
-  display: flex;
-  justify-content: center;
-}
-
-.site-main .brand-area .first-row .col-lg-4 > .single-brand {
-  border: 1px solid var(--border-color);
+.skill-image {
   text-align: center;
-  padding: 1.8rem 0rem;
-  margin: 0.9rem 0;
-  width: 180px;
-  height: 100px;
-  cursor: pointer;
-  transition: transform 0.4s ease;
 }
 
-.site-main .brand-area .first-row .col-lg-4 > .single-brand > img {
-  width: 50%;
-}
-
-.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover {
-  box-shadow: var(--box-shadow);
-  transform: scale(1.1);
-}
-
-.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover > img {
-  filter: brightness(0.15);
-}
-
-.site-main .brand-area .experience-area {
-  padding-left: 1rem;
-}
-
-.site-main .brand-area .experience-area span {
-  display: block;
-}
-
-.site-main .brand-area .experience-area .years-area {
-  background: url(../img/client-info-bg.png) no-repeat 45px 20px;
-  padding: 2rem 0;
-  width: 40rem;
-  height: 18rem;
-  padding-left: 8rem;
-  position: relative;
-}
-
-.site-main .brand-area .experience-area .bg-panel {
+#text-skill {
   position: absolute;
-  left: -190px;
-  top: 0%;
-  background: #e029290a;
-  width: 400px;
-  height: 400px;
-  margin-left: 340px;
-  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Inter";
+  font-size: 10rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.site-main .brand-area .experience-area .years-area .years {
-  font: normal bold 84px/40px var(--roboto);
-  color: var(--primary-color2);
-  z-index: 2;
+.skill-area {
+  padding: 5rem 5rem;
 }
 
-.site-main .brand-area .experience-area .years-area h2 > span {
-  font: normal 600 22px/30px var(--roboto);
+.skill-title {
+  text-align: center;
 }
 
-.site-main .brand-area .experience-area .call-area {
-  padding-left: 10rem;
+.skill-title h2 {
+  font-weight: bold;
+  background: linear-gradient(to bottom, #c33764, #1d2671);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 50px;
 }
 
-/* End Brand Area */
+.skill-area .skill-title {
+  display: block;
+  font-family: "Inter";
+  color: rgba(61, 61, 61, 0.726);
+}
+
+.skill-area .skill-title .paragraph > p {
+  padding: 0.4rem 0;
+}
+
+.single-brand img {
+  width: 60px;
+  height: 60px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.img-skill {
+  margin-top: 30px;
+}
+
+.inter-m {
+  opacity: 0.5;
+}
+
+.begin {
+  opacity: 0.3;
+}
+
+.tool {
+  background: linear-gradient(to bottom, #fc466b, #3f5efb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+}
+
+.border-tool {
+  margin-top: 50px;
+  padding: 15px;
+}
+
+/* End Skill Area */
+
 
 /* Services Area */
 
@@ -528,8 +547,9 @@
 /* Footer Area */
 
 footer.footer-area {
-  padding: 5rem 0;
-  background: url(../img/footer-bg.png) no-repeat;
+  margin-top: 10%;
+  padding: 1rem 0;
+  /*background: url(../img/footer.png) no-repeat;*/
 }
 
 footer.footer-area .social h5 {
@@ -537,13 +557,64 @@ footer.footer-area .social h5 {
 }
 
 footer.footer-area .social a > i {
-  font-size: 22px;
+  font-size: 30px;
+  font-weight: bold;
   padding: 2rem;
-  color: var(--border-color);
+  /*background: linear-gradient(to bottom, #fc466b, #3f5efb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;*/
+}
+
+.fa-facebook {
+  color: rgb(23, 120, 242);
+}
+
+.fa-twitter {
+  color: rgb(29, 161, 242);
+}
+
+.fa-github {
+  color: rgb(33, 31, 31);
+}
+
+.fa-linkedin {
+  color: rgb(0, 119, 181);
 }
 
 footer.footer-area .social a:hover > i {
-  color: var(--primary-color);
+  background: linear-gradient(to bottom, #fc466b, #3f5efb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+footer h4 {
+  background: linear-gradient(to bottom, #fc466b, #3f5efb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.fa-envelope {
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+footer span {
+  cursor: pointer;
+}
+
+footer span:hover {
+  background: linear-gradient(to right, #fc466b, #3f5efb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* End Footer */
+
+.sep {
+  width:100%;
+  height:100px
+}

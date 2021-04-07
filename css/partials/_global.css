@@ -19,6 +19,13 @@
   -webkit-text-fill-color: transparent;
 }
 
+.text-primary-name{
+    background: linear-gradient(to right, #c33764, #1d2671);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 
 /* Buttons */ 
 
@@ -67,12 +74,17 @@
 }
 
 p.para{
-    color: var(--text-color);
-    font: normal 500 16px/ 25px var(--roboto);
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .font-roboto{
-    font-family: var(--roboto);
+    font-family: 'Inter';
 }
 
 button:focus,
@@ -83,11 +95,6 @@ button:hover
     outline: 0px !important;
     box-shadow: none !important;
 }
-
-.title-h1{
-    font: normal bold 39px/ 40px var(--roboto);
-}
-
 
 .navbar_fixed{
     position: fixed;
