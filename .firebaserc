@@ -1,6 +1,5 @@
 {
   "projects": {
-    "default": "info-cjaninta",
-    "info-cjaninta": "info-cjaninta"
+    "default": "info-cjaninta"
   }
 }
