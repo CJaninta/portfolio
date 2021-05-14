@@ -105,7 +105,7 @@
   border: 1.5px solid #ff480063;
 }
 
-.fa-file-pdf{
+.fa-file-pdf {
   margin-right: 5px;
 }
 
@@ -562,6 +562,168 @@
 }
 
 /* End subscribe me */
+
+/* Start Project Area */
+
+.banner-proj {
+  position: relative;
+}
+
+.banner-proj::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: url(../img/info.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.15;
+}
+
+.proj-image {
+  text-align: center;
+}
+
+.proj-main{
+  margin: 15rem;
+}
+
+#text-proj {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Inter";
+  font-size: 8rem;
+  font-weight: bold;
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.site-main .proj-area {
+  padding: 8rem 5rem;
+}
+
+.proj-title h4 {
+  font-weight: bold;
+  background: linear-gradient(to bottom, #c33764, #1d2671);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.proj-title h5 {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
+.proj-title i {
+  margin-right: 10px;
+}
+
+.proj-area .proj-title {
+  display: block;
+  font-family: "Inter";
+  color: rgba(61, 61, 61, 0.726);
+}
+
+.proj-area .proj-title .paragraph > p {
+  padding: 0.4rem 0;
+}
+
+.controls-top {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+.btn-floating {
+  font-size: 40px;
+  margin-left: 20px;
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.btn-floating:hover {
+  background: linear-gradient(to right, #fc466b, #3f5efb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.proj-context {
+  margin-top: 50px;
+}
+
+.carousel {
+  margin-top: 40px;
+  padding: 50px;
+  border-bottom: 8px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #fc466b, #3f5efb);
+}
+
+.cnn {
+  margin-top: 2px;
+  padding: 50px;
+  border-bottom: 8px solid;
+  border-image-slice: 1;
+  border-image-source:  linear-gradient(to right, #fc466b, #3f5efb);
+}
+
+.card-img-top {
+  width: 280px;
+  height: 150px;
+}
+
+.tool-proj {
+  margin-left: 20px;
+}
+
+.link {
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.dialog img{
+  width: 150px;
+  height: 55px;
+}
+
+.colab img {
+  width: 140px;
+  height: 60px;
+}
+
+.keras img {
+  width: 140px;
+  height: 40px;
+}
+
+.numpy img {
+  width: 140px;
+  height: 60px;
+}
+
+.fa-google-drive {
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+/* End Project Area */
 
 /* Footer Area */
 
