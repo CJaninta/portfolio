@@ -588,7 +588,7 @@
   text-align: center;
 }
 
-.proj-main{
+.proj-main {
   margin: 15rem;
 }
 
@@ -610,19 +610,26 @@
   padding: 8rem 5rem;
 }
 
-.proj-title h4 {
+.proj-title h3 {
   font-weight: bold;
   background: linear-gradient(to bottom, #c33764, #1d2671);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  margin-bottom: 2rem;
 }
 
 .proj-title h5 {
-  margin-top: 20px;
   font-weight: bold;
 }
 
+.fa-file-code {
+  margin-top: 5rem;
+}
+
+.fa-link {
+  margin-top: 1rem;
+}
 
 .proj-title i {
   margin-right: 10px;
@@ -676,7 +683,7 @@
   padding: 50px;
   border-bottom: 8px solid;
   border-image-slice: 1;
-  border-image-source:  linear-gradient(to right, #fc466b, #3f5efb);
+  border-image-source: linear-gradient(to right, #fc466b, #3f5efb);
 }
 
 .card-img-top {
@@ -684,16 +691,12 @@
   height: 150px;
 }
 
-.tool-proj {
-  margin-left: 20px;
-}
-
 .link {
   font-size: 30px;
   margin-left: 20px;
 }
 
-.dialog img{
+.dialog img {
   width: 150px;
   height: 55px;
 }
@@ -714,8 +717,23 @@
 }
 
 .fa-google-drive {
-  font-size: 30px;
+  font-size: 40px;
   margin-left: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(31, 164, 99, 1) 0%,
+    rgba(255, 208, 75, 1) 35%,
+    rgba(70, 136, 244, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.fa-github-square {
+  font-size: 40px;
+  margin-left: 20px;
+  color: rgba(33, 31, 31, 1);
 }
 
 .row {
