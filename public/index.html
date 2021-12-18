@@ -77,6 +77,183 @@
         }
     </script>
 
+    <style>
+        .banner-proj {
+            position: relative;
+        }
+
+        .banner-proj::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            background: url(../img/info.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            opacity: 0.15;
+        }
+
+        .proj-image {
+            text-align: center;
+        }
+
+        .proj-main {
+            margin: 15rem;
+        }
+
+        #text-proj {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: "Inter";
+            font-size: 8rem;
+            font-weight: bold;
+            background: var(--gradient-color);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .site-main .proj-area {
+            padding: 8rem 5rem;
+        }
+
+        .proj-title h3 {
+            font-weight: bold;
+            background: linear-gradient(to bottom, #c33764, #1d2671);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 2rem;
+        }
+
+        .proj-title h5 {
+            font-weight: bold;
+        }
+
+        .fa-file-code {
+            margin-top: 5rem;
+        }
+
+        .fa-link {
+            margin-top: 1rem;
+        }
+
+        .proj-title i {
+            margin-right: 10px;
+        }
+
+        .proj-area .proj-title {
+            display: block;
+            font-family: "Inter";
+            color: rgba(61, 61, 61, 0.726);
+        }
+
+        .proj-area .proj-title .paragraph>p {
+            padding: 0.4rem 0;
+        }
+
+        .controls-top {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 40px;
+        }
+
+        .btn-floating {
+            font-size: 40px;
+            margin-left: 20px;
+            background: var(--gradient-color);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .btn-floating:hover {
+            background: linear-gradient(to right, #fc466b, #3f5efb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .proj-context {
+            margin-top: 50px;
+        }
+
+        .carousel {
+            margin-top: 40px;
+            padding: 50px;
+            border-bottom: 8px solid;
+            border-image-slice: 1;
+            border-image-source: linear-gradient(to right, #fc466b, #3f5efb);
+        }
+
+        .cnn {
+            margin-top: 2px;
+            padding: 50px;
+            border-bottom: 8px solid;
+            border-image-slice: 1;
+            border-image-source: linear-gradient(to right, #fc466b, #3f5efb);
+        }
+
+        .card-img-top {
+            width: 280px;
+            height: 150px;
+        }
+
+        .link {
+            font-size: 30px;
+            margin-left: 20px;
+        }
+
+        .dialog img {
+            width: 150px;
+            height: 55px;
+        }
+
+        .colab img {
+            width: 140px;
+            height: 60px;
+        }
+
+        .keras img {
+            width: 140px;
+            height: 40px;
+        }
+
+        .numpy img {
+            width: 140px;
+            height: 60px;
+        }
+
+        .fa-google-drive {
+            font-size: 40px;
+            margin-left: 20px;
+            background: linear-gradient(90deg,
+                    rgba(31, 164, 99, 1) 0%,
+                    rgba(255, 208, 75, 1) 35%,
+                    rgba(70, 136, 244, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .fa-github-square {
+            font-size: 40px;
+            margin-left: 20px;
+            color: rgba(33, 31, 31, 1);
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -131,7 +308,7 @@
                         <h3 class="title-text">Hi</h3>
                         <h1 class="title-text text-color">I'm Macky</h1>
                         <h4 class="title-text text-primary-name">Chawalit Janinta</h4>
-                        <a href="https://drive.google.com/file/d/1yx_J_4ck5XII347hE33U-MI2zLfgst9s/view?usp=sharing"
+                        <a href="https://drive.google.com/file/d/1CMbibRidp-A8BDPffqvUqswgNZzcWKzK/view?usp=sharing"
                             target="_blank">
                             <button type="button" class="btn btn-light btn-lg"><i class="far fa-file-pdf"></i> Get my
                                 resume !</button>
@@ -169,12 +346,12 @@
                         <h2><i class="bi bi-globe"></i> Nationality :</h2>
                         <h4><img src="https://flagcdn.com/24x18/th.png"> Thai</h4>
                         <h2><i class="bi bi-chat-dots"></i> Language :</h2>
-                        <h4><img src="https://flagcdn.com/24x18/th.png"> Thai (Native) , <img
+                        <h4><img src="https://flagcdn.com/24x18/th.png"> Thai (Native) <img
                                 src="https://flagcdn.com/24x18/gb.png"> English (Intermediate)</h4>
                         <h2><i class="bi bi-bell"></i> Interest :</h2>
-                        <h4>Web Development , Machine Learning </h4>
+                        <h4>Software Development</h4>
                         <h2><i class="bi bi-bookmark-check"></i> Objective :</h2>
-                        <h4>Looking for the position of web developer <br />as front-end or back-end or both.</h4>
+                        <h4>I'm looking for a position as a developer <br /> either front-end or back-end, or both.</h4>
                     </div>
                 </div>
             </div>
@@ -195,7 +372,7 @@
                         <h4><i class="fas fa-graduation-cap"></i> King Mongkut's University of Technology North Bangkok
                         </h4>
                         <h6>Bachelor's degree , Computer and Information Science (2017-2021)</h6>
-                        <h6>GPX : 3.18 (Studying in 4th year )</h6>
+                        <h6>GPX : 3.24</h6>
                     </div>
                     <div class="col-lg-6 col-md-12">
                         <div class="edc-image">
@@ -227,19 +404,23 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 exp-title">
-                        <h4><i class="fas fa-certificate"></i>Internship , Department of Medical Sciences (Cooperative)
+                        <h4><i class="fas fa-certificate"></i>Internship (Cooperative) , Department of Medical Sciences
                         </h4>
                         <span>(June 2020 - Dec 2020 , For 7 months)</span>
                         <h6>Assist in front-end and doing some back-end. The project is a project of Department of
                             Medical Sciences that my professor received a fund to do this project. My part made
                             web-site that is part of Big Data Center project that department has been operating.</h6>
-                        <h5>- CMS Big Data Center (Project)</h5>
+                        <h5>- CMS Big Data Center (Thesis)</h5>
                         <ul>
                             <li>UX/UI Design</li>
                             <li>Front-end development (ReactJS)</li>
                             <li>Back-end development (MySQL , RESTful API)</li>
                             <li>Data Visualization (Tableau)</li>
                         </ul>
+                        <br />
+                        <h4><i class="fas fa-certificate"></i>Full - Time (Application Developer) , CDG Group Thailand
+                        </h4>
+                        <span>(June 2021 - Present)</span>
                     </div>
                 </div>
         </section>
@@ -272,34 +453,35 @@
                                 <img src="./img/skill/css.png" alt="Brand-3 ">
                             </div>
 
-                            <div class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top" title="SQL">
-                                <img src="./img/skill/sql.png" alt="Brand-4">
-                            </div>
                         </div>
 
                         <h2 class="inter-m">Intermediate</h2>
                         <div class="row img-skill justify-content-center">
 
-                            <div class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top"
-                                title="C Language">
-                                <img src="./img/skill/c.png" alt="Brand-5 ">
+                            <div class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top" title="SQL">
+                                <img src="./img/skill/sql.png" alt="Brand-4">
                             </div>
 
                             <div class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top" title="Python">
                                 <img src="./img/skill/python.png" alt="Brand-8 ">
                             </div>
 
+                            <div class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top" title="Golang">
+                                <img src="./img/skill/go.png" alt="Brand-30 ">
+                            </div>
+
                         </div>
 
                         <h2 class="begin">Beginner</h2>
                         <div class="row img-skill justify-content-center">
+
                             <div class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top"
                                 title="Typescript">
                                 <img src="./img/skill/typescript.png" alt="Brand-6 ">
                             </div>
 
-                            <div class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top" title="PHP">
-                                <img src="./img/skill/php.png" alt="Brand-7 ">
+                            <div class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top" title="Kotlin">
+                                <img src="./img/skill/kotlin.png" alt="Brand-32 ">
                             </div>
 
                             <div class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top" title="Java">
@@ -308,8 +490,24 @@
 
                         </div>
                         <div class="border-tool">
-                            <h1 class="tool">Tools : </h1>
+                            <h1 class="tool">Tools</h1>
                             <div class="row img-skill justify-content-center">
+
+                                <div class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Gitlab">
+                                    <img src="./img/skill/gitlab.png" alt="Brand-31 ">
+                                </div>
+
+                                <div class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Android Studio">
+                                    <img src="./img/skill/android-studio.png" alt="Brand-32 ">
+                                </div>
+
+                                <div class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Linux Command Line">
+                                    <img src="./img/skill/linux.png" alt="Brand-33 ">
+                                </div>
+
                                 <div class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top"
                                     title="MySQL">
                                     <img src="./img/skill/mysql.png" alt="Brand-9 ">
@@ -331,11 +529,6 @@
                                 </div>
 
                                 <div class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Material-ui">
-                                    <img src="./img/skill/material-ui.png" alt="Brand-13 ">
-                                </div>
-
-                                <div class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top"
                                     title="Postman">
                                     <img src="./img/skill/postman-api.png" alt="Brand-14 ">
                                 </div>
@@ -346,18 +539,8 @@
                                 </div>
 
                                 <div class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Bitbucket">
-                                    <img src="./img/skill/bitbucket.png" alt="Brand-25 ">
-                                </div>
-
-                                <div class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top"
                                     title="VScode">
                                     <img src="./img/skill/visual-studio.png" alt="Brand-17 ">
-                                </div>
-
-                                <div class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Tableau">
-                                    <img src="./img/skill/tableau.png" alt="Brand-16 ">
                                 </div>
 
                                 <div class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -371,23 +554,13 @@
                                 </div>
 
                                 <div class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Tensorflow">
-                                    <img src="./img/skill/tensorflow.png" alt="Brand-20 ">
-                                </div>
-
-                                <div class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top"
                                     title="React JS">
                                     <img src="./img/skill/atom.png" alt="Brand-21 ">
                                 </div>
 
                                 <div class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Bootstrap">
-                                    <img src="./img/skill/bootstrap.png" alt="Brand-22 ">
-                                </div>
-
-                                <div class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Git Kraken">
-                                    <img src="./img/skill/gitkraken.png" alt="Brand-24 ">
+                                    title="Vue JS">
+                                    <img src="./img/skill/vue.png" alt="Brand-22 ">
                                 </div>
 
                             </div>
@@ -787,10 +960,6 @@
                             </div>
                             <div class="proj-context">
                                 <h3><i class="fas fa-square-root-alt"></i> Numerical method ( 2019 )</h3>
-                                <span class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="MySQL">
-                                    <img src="./img/skill/mysql.png" alt="Brand-9 ">
-                                </span>
                                 <span class="single-brand" data-bs-toggle="tooltip" data-bs-placement="top"
                                     title="HTML">
                                     <img src="./img/skill/html-5.png" alt="Brand-2 ">
