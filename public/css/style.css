@@ -666,6 +666,8 @@
   background-clip: text;
 }
 
+a:hover { text-decoration: none; }
+
 .proj-context {
   margin-top: 50px;
 }
